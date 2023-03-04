@@ -1,0 +1,16 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Srez_1.MainWindow"
+        Title="Srez_1">
+    <DataGrid Name="MyUser_DataGrid">
+        <DataGrid.Columns>
+            <DataGridTextColumn Width="150" Header="Имя" Binding="{Binding FirstName}"/>
+            <DataGridTextColumn Width="150" Header="Отчество" Binding="{Binding MiddleName}"/>
+            <DataGridTextColumn Width="150" Header="Фамилия" Binding="{Binding LastName}"/>
+            <DataGridTextColumn Width="150" Header="Роль" Binding="{Binding RoleName}"/>
+        </DataGrid.Columns>
+    </DataGrid>
+</Window>
